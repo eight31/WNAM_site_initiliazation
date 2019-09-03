@@ -6,7 +6,7 @@ read MT_NAME
 
 ##Создаём пароль и сохраняем его в переменную
 MT_PASSWORD=$(apg -x 10 -M CSN -n 1) 
-[ -z "${MT_PASSWOR}" ] && { echo "Пароль не сгенерирован!"; exit 1; }
+[ -z "${MT_PASSWORD}" ] && { echo "Пароль не сгенерирован!"; exit 1; }
 
 echo "Mikrotik Radius/OpenVPN password for WNAM is: ${MT_PASSWORD}"
 
